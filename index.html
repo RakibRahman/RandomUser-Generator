@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random User Generator</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="flex items-center justify-center h-screen bg-gray-100">
+      <div
+        class="bg-gray-800 text-white font-bold rounded-lg border shadow-lg p-10 space-y-10 text-center transition duration-100 w-9/12 h-9/12"
+      >
+        <div class="flex flex-col justify-center items-center">
+          <h3 class="capitalize md:text-4xl animate-pulse">
+            Random User's Info
+          </h3>
+          <img class="w-14 mt-2" src="/identification-card.svg" alt="" />
+        </div>
+        <div
+          id="joke"
+          class="w-auto mx-auto leading-relaxed tracking-wide md:text-3xl"
+        >
+          <div
+            class="w-24 h-24 rounded-full bg-green-300 border-2 border-white bg-opacity-0 animate-ping mx-auto"
+          ></div>
+        </div>
+        <button
+          id="nxt-joke"
+          class="bg-white text-gray-500 py-2 px-4 rounded-lg hover:bg-opacity-20 hover:text-white flex gap-2 justify-center items-center mx-auto"
+        >
+          Refresh
+          <span
+            ><img
+              class="w-5 hover:opacity-25"
+              src="img/arrows-clockwise.svg"
+              alt=""
+          /></span>
+        </button>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="/app.js"></script>
+  </body>
+</html>
